@@ -6,7 +6,7 @@ body{
 }
 
 .fade{
-    margin-top: 30vh;
+    margin-top: 10vh;
     height: 40vh;
     background-image: linear-gradient(80deg , red,gold,royalblue,lime,royalblue,gold, red);
     background-size: 5500%;
@@ -21,5 +21,54 @@ body{
 
     to{
         background-position: 100% 0;
+    }
+}
+
+.container{
+    height: 40vh;
+    width: 100vw;
+    text-align: center;
+    .wrapper{
+        display: inline-block;
+        width: 30vw;
+        text-align: center;
+        margin-top: 10vh;
+        .tile{
+            display: inline-block;
+            height: 4vw;
+            width: 4vw;
+            background-color: #FFF;
+            border-radius: 4px;
+            animation: disco 1.9s infinite;
+        }
+        .tile:nth-child(2n){
+            animation: disco 1.2s infinite;
+        }
+        .tile:nth-child(3n){
+            animation: disco 0.7s infinite;
+        }
+    }
+    .l{
+        margin-right: 10vw;
+    }
+
+    .r{
+        margin-left: 10vw;
+    }
+}
+
+@keyframes disco{
+
+    10%{
+        opacity: 1;
+        background-color: #ec4ef1;
+    }
+    50%{
+        opacity: 0;
+        background-color: #0f67e2;
+    }
+    90%{
+        opacity: 1;
+        background-color: #ec4ef1;
     }
 }
