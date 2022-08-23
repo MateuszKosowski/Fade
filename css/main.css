@@ -8,10 +8,10 @@ body {
 .fade {
   margin-top: 30vh;
   height: 40vh;
-  background-image: linear-gradient(80deg, red, red, gold, royalblue, lime, royalblue, gold, red, red);
-  background-size: 800%;
-  -webkit-animation: move 5s linear infinite;
-          animation: move 5s linear infinite;
+  background-image: linear-gradient(80deg, red, gold, royalblue, lime, royalblue, gold, red);
+  background-size: 5500%;
+  -webkit-animation: move 6s linear infinite;
+          animation: move 6s linear infinite;
 }
 
 @-webkit-keyframes move {
